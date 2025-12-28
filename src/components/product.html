@@ -1,0 +1,229 @@
+<div class="container mx-auto px-4 py-8">
+  <div class="flex flex-col md:flex-row gap-8">
+    <!-- Sidebar -->
+    <aside class="w-full md:w-64 flex-shrink-0">
+      <div class="bg-white rounded-lg shadow p-6">
+        <h3 class="text-lg font-semibold mb-4">Browse</h3>
+
+        <!-- Keamanan Pintar -->
+        <div class="mb-4">
+          <button
+            data-category="keamanan"
+            class="flex items-center justify-between w-full text-left font-medium category-link hover:text-orange-600"
+          >
+            <span>Keamanan Pintar</span>
+            <svg
+              id="icon-keamanan"
+              class="w-4 h-4 transform transition-transform"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              ></path>
+            </svg>
+          </button>
+          <div id="cat-keamanan" class="ml-4 mt-2 space-y-2">
+            <a
+              href="#"
+              data-subcategory="Smart CCTV Indoor"
+              class="block text-sm text-gray-600 subcategory-link hover:text-orange-600"
+              >Smart CCTV Indoor</a
+            >
+            <a
+              href="#"
+              data-subcategory="Smart CCTV Outdoor"
+              class="block text-sm text-gray-600 subcategory-link hover:text-orange-600"
+              >Smart CCTV Outdoor</a
+            >
+            <a
+              href="#"
+              data-subcategory="Penyimpanan Video"
+              class="block text-sm text-gray-600 subcategory-link hover:text-orange-600"
+              >Penyimpanan Video</a
+            >
+            <a
+              href="#"
+              data-subcategory="Smart Door Lock"
+              class="block text-sm text-gray-600 subcategory-link hover:text-orange-600"
+              >Smart Door Lock</a
+            >
+          </div>
+        </div>
+
+        <!-- Efisiensi Energi -->
+        <div class="mb-4">
+          <button
+            data-category="efisiensi"
+            class="flex items-center justify-between w-full text-left font-medium category-link hover:text-orange-600"
+          >
+            <span>Efisiensi Energi</span>
+            <svg
+              id="icon-efisiensi"
+              class="w-4 h-4 transform transition-transform"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              ></path>
+            </svg>
+          </button>
+          <div id="cat-efisiensi" class="ml-4 mt-2 space-y-2 hidden">
+            <a
+              href="#"
+              data-subcategory="Smart Light"
+              class="block text-sm text-gray-600 subcategory-link hover:text-orange-600"
+              >Smart Light</a
+            >
+            <a
+              href="#"
+              data-subcategory="Sakelar & Colokan"
+              class="block text-sm text-gray-600 subcategory-link hover:text-orange-600"
+              >Sakelar & Colokan</a
+            >
+            <a
+              href="#"
+              data-subcategory="Kendali"
+              class="block text-sm text-gray-600 subcategory-link hover:text-orange-600"
+              >Kendali</a
+            >
+          </div>
+        </div>
+
+        <!-- Jaringan Internet -->
+        <div class="mb-4">
+          <button
+            data-category="jaringan"
+            class="flex items-center justify-between w-full text-left font-medium category-link hover:text-orange-600"
+          >
+            <span>Jaringan Internet</span>
+            <svg
+              id="icon-jaringan"
+              class="w-4 h-4 transform transition-transform"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              ></path>
+            </svg>
+          </button>
+          <div id="cat-jaringan" class="ml-4 mt-2 space-y-2 hidden">
+            <a
+              href="#"
+              data-subcategory="Router"
+              class="block text-sm text-gray-600 subcategory-link hover:text-orange-600"
+              >Router</a
+            >
+            <a
+              href="#"
+              data-subcategory="Range Extender"
+              class="block text-sm text-gray-600 subcategory-link hover:text-orange-600"
+              >Range Extender</a
+            >
+          </div>
+        </div>
+
+        <div class="mt-6">
+          <button
+            id="showAllBtn"
+            class="text-sm text-orange-600 hover:text-orange-700 font-medium"
+          >
+            Tampilkan Semua Produk
+          </button>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="flex-1">
+      <div class="flex justify-between items-center mb-6">
+        <h1 class="text-2xl font-bold" id="categoryTitle">Semua Produk</h1>
+        <select
+          id="sortSelect"
+          class="border border-gray-300 rounded px-4 py-2 text-sm"
+        >
+          <option value="default">Default sorting</option>
+          <option value="price-asc">Harga: Rendah ke Tinggi</option>
+          <option value="price-desc">Harga: Tinggi ke Rendah</option>
+          <option value="name-asc">Nama: A-Z</option>
+          <option value="name-desc">Nama: Z-A</option>
+        </select>
+      </div>
+
+      <!-- Products Grid -->
+      <div
+        id="productsGrid"
+        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
+      >
+        <!-- Products will be injected here by JavaScript -->
+        <div class="col-span-full text-center py-12">
+          <p class="text-gray-400">Loading products...</p>
+        </div>
+      </div>
+    </main>
+  </div>
+</div>
+
+<!-- Product Detail Modal -->
+<div
+  id="productModal"
+  class="hidden fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center p-4"
+>
+  <div
+    class="bg-white rounded-lg max-w-4xl w-full max-h-[90vh] overflow-y-auto"
+  >
+    <div class="p-6">
+      <div class="flex justify-between items-start mb-4">
+        <h2 id="modalTitle" class="text-2xl font-bold"></h2>
+        <button id="closeModalBtn" class="text-gray-500 hover:text-gray-700">
+          <svg
+            class="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M6 18L18 6M6 6l12 12"
+            ></path>
+          </svg>
+        </button>
+      </div>
+      <div class="grid md:grid-cols-2 gap-6">
+        <div>
+          <img id="modalImage" src="" alt="" class="w-full rounded-lg" />
+        </div>
+        <div>
+          <h3 class="font-bold text-lg mb-2">SPESIFIKASI</h3>
+          <div id="modalSpecs" class="space-y-2 mb-4"></div>
+
+          <h3 class="font-bold text-lg mb-2">ISI KEMASAN</h3>
+          <p id="modalPackage" class="text-gray-700 mb-4"></p>
+
+          <h3 class="font-bold text-lg mb-2">GARANSI</h3>
+          <p id="modalWarranty" class="text-gray-700"></p>
+        </div>
+      </div>
+      <div class="mt-6">
+        <h3 class="font-bold text-lg mb-4">DESKRIPSI</h3>
+        <div id="modalDescription" class="prose max-w-none"></div>
+      </div>
+    </div>
+  </div>
+</div>

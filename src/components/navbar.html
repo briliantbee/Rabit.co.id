@@ -1,0 +1,279 @@
+<header class="w-full bg-linear-to-b from-orange-600 to-white pb-44">
+  <!-- Promo/Announcement Bar (Fixed Top) -->
+  <div
+    id="promoBar"
+    class="fixed top-0 left-0 w-full bg-linear-to-r from-orange-600 via-orange-500 to-orange-600 text-white py-2.5 z-[60] shadow-md"
+  >
+    <div class="max-w-7xl mx-auto px-6 overflow-hidden">
+      <div class="flex items-center justify-center gap-2">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-5 w-5 shrink-0"
+          viewBox="0 0 20 20"
+          fill="currentColor"
+        >
+          <path
+            d="M2 11a1 1 0 011-1h2a1 1 0 011 1v5a1 1 0 01-1 1H3a1 1 0 01-1-1v-5zM8 7a1 1 0 011-1h2a1 1 0 011 1v9a1 1 0 01-1 1H9a1 1 0 01-1-1V7zM14 4a1 1 0 011-1h2a1 1 0 011 1v12a1 1 0 01-1 1h-2a1 1 0 01-1-1V4z"
+          />
+        </svg>
+        <p class="text-sm font-medium">
+          <strong>PROMO SPESIAL!</strong> Dapatkan diskon hingga 30% untuk
+          pembelian paket CCTV -
+          <a href="#" class="underline hover:text-orange-200 font-semibold"
+            >Belanja Sekarang!</a
+          >
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Navbar (Starts below promo bar) -->
+  <nav id="navbar" class="fixed top-10 left-0 w-full z-50 bg-transparent">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <!-- Logo -->
+      <div class="flex items-center gap-3">
+        <img
+          id="logoImage"
+          src="../../public/nusa.png"
+          alt="Logo"
+          class="h-20 filter-none"
+        />
+      </div>
+
+      <!-- Desktop Menu -->
+      <ul class="hidden md:flex gap-8 font-medium items-center">
+        <li>
+          <a
+            href="/index.html"
+            class="nav-link text-white relative py-2 transition-colors duration-300 hover:text-orange-400"
+            >Beranda</a
+          >
+        </li>
+        <li>
+          <a
+            href="/mainProduct.html"
+            class="nav-link text-white relative py-2 transition-colors duration-300 hover:text-orange-400"
+            >Keamanan Pintar</a
+          >
+        </li>
+        <li>
+          <a
+            href="/mainProduct.html?category=efisiensi"
+            class="nav-link text-white relative py-2 transition-colors duration-300 hover:text-orange-400"
+            >Efisiensi Energi</a
+          >
+        </li>
+        <li>
+          <a
+            href="/panduan.html"
+            class="nav-link text-white relative py-2 transition-colors duration-300 hover:text-orange-400"
+            >Panduan</a
+          >
+        </li>
+        <li>
+          <a
+            href="/cctv.html"
+            class="nav-link text-white relative py-2 transition-colors duration-300 hover:text-orange-400"
+            >Jasa Pasang CCTV</a
+          >
+        </li>
+        <li>
+          <a
+            href="/garansi.html"
+            class="nav-link text-white relative py-2 transition-colors duration-300 hover:text-orange-400"
+            >Garansi</a
+          >
+        </li>
+        <li>
+          <a
+            href="/ceritaKami.html"
+            class="nav-link text-white relative py-2 transition-colors duration-300 hover:text-orange-400"
+            >Cerita Kami</a
+          >
+        </li>
+        <li>
+          <a
+            href="/kebijakan.html"
+            class="nav-link text-white relative py-2 transition-colors duration-300 hover:text-orange-400"
+            >Kebijakan Privasi</a
+          >
+        </li>
+        <li>
+          <a
+            href="/blog.html"
+            class="nav-link text-white relative py-2 transition-colors duration-300 hover:text-orange-400"
+            >Blog</a
+          >
+        </li>
+        <!-- Search Button -->
+        <li>
+          <button
+            id="searchBtn"
+            class="text-white hover:text-orange-400 transition-colors duration-300 p-2"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+              />
+            </svg>
+          </button>
+        </li>
+      </ul>
+
+      <!-- Mobile Menu Button -->
+      <button id="mobileMenuBtn" class="md:hidden text-white p-2">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-6 w-6"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h16"
+          />
+        </svg>
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="hidden md:hidden bg-black/95 backdrop-blur-lg">
+      <ul class="px-6 py-4 space-y-4">
+        <li>
+          <a
+            href="/index.html"
+            class="block text-white py-2 hover:text-orange-400"
+            >Beranda</a
+          >
+        </li>
+        <li>
+          <a
+            href="/mainProduct.html"
+            class="block text-white py-2 hover:text-orange-400"
+            >Keamanan Pintar</a
+          >
+        </li>
+        <li>
+          <a
+            href="/mainProduct.html?category=efisiensi"
+            class="block text-white py-2 hover:text-orange-400"
+            >Efisiensi Energi</a
+          >
+        </li>
+        <li>
+          <a
+            href="/panduan.html"
+            class="block text-white py-2 hover:text-orange-400"
+            >Panduan</a
+          >
+        </li>
+        <li>
+          <a href="#" class="block text-white py-2 hover:text-orange-400"
+            >Jasa Pasang CCTV</a
+          >
+        </li>
+        <li>
+          <a
+            href="/garansi.html"
+            class="block text-white py-2 hover:text-orange-400"
+            >Garansi</a
+          >
+        </li>
+        <li>
+          <a
+            href="/ceritaKami.html"
+            class="block text-white py-2 hover:text-orange-400"
+            >Cerita Kami</a
+          >
+        </li>
+        <li>
+          <a
+            href="/kebijakan.html"
+            class="block text-white py-2 hover:text-orange-400"
+            >Kebijakan Privasi</a
+          >
+        </li>
+        <li>
+          <button
+            id="mobileSearchBtn"
+            class="w-full text-left text-white py-2 hover:text-orange-400 flex items-center gap-2"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+              />
+            </svg>
+            Cari
+          </button>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Search Overlay -->
+  <div
+    id="searchOverlay"
+    class="fixed inset-0 bg-black/80 backdrop-blur-sm z-[70] flex items-start justify-center pt-32 opacity-0 invisible"
+  >
+    <div
+      class="w-full max-w-3xl px-6 search-container transform -translate-y-8"
+    >
+      <div class="relative">
+        <input
+          type="text"
+          id="searchInput"
+          placeholder="Cari produk, layanan, atau artikel..."
+          class="w-full bg-white/10 text-white placeholder-gray-300 px-6 py-4 pr-12 text-lg rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 backdrop-blur-md border border-white/20"
+          autocomplete="off"
+        />
+        <button
+          id="closeSearch"
+          class="absolute right-4 top-1/2 transform -translate-y-1/2 text-gray-300 hover:text-white transition-colors"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-6 w-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M6 18L18 6M6 6l12 12"
+            />
+          </svg>
+        </button>
+      </div>
+      <p class="text-white/70 text-sm mt-4 text-center">
+        Tekan
+        <kbd class="bg-white/20 px-3 py-1 rounded text-white font-mono text-xs"
+          >ESC</kbd
+        >
+        untuk menutup
+      </p>
+    </div>
+  </div>
+</header>

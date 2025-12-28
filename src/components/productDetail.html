@@ -1,0 +1,221 @@
+<div class="container mx-auto px-4 py-8">
+  <div class="flex flex-col md:flex-row gap-8">
+    <!-- Sidebar -->
+    <aside class="w-full md:w-64 flex-shrink-0">
+      <div class="bg-white rounded-lg shadow p-6">
+        <h3 class="text-lg font-semibold mb-4">Browse</h3>
+
+        <!-- Keamanan Pintar -->
+        <div class="mb-4">
+          <button
+            data-category="keamanan"
+            class="flex items-center justify-between w-full text-left font-medium category-link hover:text-orange-600"
+          >
+            <span>Keamanan Pintar</span>
+            <svg
+              id="icon-keamanan"
+              class="w-4 h-4 transform transition-transform"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              ></path>
+            </svg>
+          </button>
+          <div id="cat-keamanan" class="ml-4 mt-2 space-y-2">
+            <a
+              href="#"
+              data-subcategory="Smart CCTV Indoor"
+              class="block text-sm text-gray-600 subcategory-link hover:text-orange-600"
+              >Smart CCTV Indoor</a
+            >
+            <a
+              href="#"
+              data-subcategory="Smart CCTV Outdoor"
+              class="block text-sm text-gray-600 subcategory-link hover:text-orange-600"
+              >Smart CCTV Outdoor</a
+            >
+            <a
+              href="#"
+              data-subcategory="Penyimpanan Video"
+              class="block text-sm text-gray-600 subcategory-link hover:text-orange-600"
+              >Penyimpanan Video</a
+            >
+            <a
+              href="#"
+              data-subcategory="Smart Door Lock"
+              class="block text-sm text-gray-600 subcategory-link hover:text-orange-600"
+              >Smart Door Lock</a
+            >
+          </div>
+        </div>
+
+        <!-- Efisiensi Energi -->
+        <div class="mb-4">
+          <button
+            data-category="efisiensi"
+            class="flex items-center justify-between w-full text-left font-medium category-link hover:text-orange-600"
+          >
+            <span>Efisiensi Energi</span>
+            <svg
+              id="icon-efisiensi"
+              class="w-4 h-4 transform transition-transform"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              ></path>
+            </svg>
+          </button>
+          <div id="cat-efisiensi" class="ml-4 mt-2 space-y-2 hidden">
+            <a
+              href="#"
+              data-subcategory="Smart Light"
+              class="block text-sm text-gray-600 subcategory-link hover:text-orange-600"
+              >Smart Light</a
+            >
+            <a
+              href="#"
+              data-subcategory="Sakelar & Colokan"
+              class="block text-sm text-gray-600 subcategory-link hover:text-orange-600"
+              >Sakelar & Colokan</a
+            >
+            <a
+              href="#"
+              data-subcategory="Kendali"
+              class="block text-sm text-gray-600 subcategory-link hover:text-orange-600"
+              >Kendali</a
+            >
+          </div>
+        </div>
+
+        <!-- Jaringan Internet -->
+        <div class="mb-4">
+          <button
+            data-category="jaringan"
+            class="flex items-center justify-between w-full text-left font-medium category-link hover:text-orange-600"
+          >
+            <span>Jaringan Internet</span>
+            <svg
+              id="icon-jaringan"
+              class="w-4 h-4 transform transition-transform"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              ></path>
+            </svg>
+          </button>
+          <div id="cat-jaringan" class="ml-4 mt-2 space-y-2 hidden">
+            <a
+              href="#"
+              data-subcategory="Router"
+              class="block text-sm text-gray-600 subcategory-link hover:text-orange-600"
+              >Router</a
+            >
+            <a
+              href="#"
+              data-subcategory="Range Extender"
+              class="block text-sm text-gray-600 subcategory-link hover:text-orange-600"
+              >Range Extender</a
+            >
+          </div>
+        </div>
+
+        <div class="mt-6">
+          <button
+            id="showAllBtn"
+            class="text-sm text-orange-600 hover:text-orange-700 font-medium"
+          >
+            Tampilkan Semua Produk
+          </button>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="flex-1">
+      <!-- Product Detail Section -->
+      <div class="bg-white rounded-lg shadow">
+        <!-- Product Header with Image Gallery -->
+        <div class="p-6">
+          <div class="grid md:grid-cols-2 gap-8">
+            <!-- Image Gallery -->
+            <div>
+              <div class="relative mb-4">
+                <img id="mainImage" src="" alt="" class="w-full rounded-lg" />
+              </div>
+              <div id="thumbnails" class="grid grid-cols-4 gap-2">
+                <!-- Thumbnails will be injected here -->
+              </div>
+            </div>
+
+            <!-- Product Info -->
+            <div>
+              <h1 id="productName" class="text-3xl font-bold mb-4"></h1>
+
+              <!-- Specifications -->
+              <div class="mb-6">
+                <h3 class="font-bold text-lg mb-3">SPECIFICATION</h3>
+                <div id="productSpecs" class="space-y-1 text-sm">
+                  <!-- Specs will be injected here -->
+                </div>
+              </div>
+
+              <!-- Package Contents -->
+              <div class="mb-6">
+                <h3 class="font-bold text-lg mb-3">ISI KEMASAN</h3>
+                <div id="productPackage" class="text-sm text-gray-700">
+                  <!-- Package will be injected here -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Description Section -->
+        <div class="border-t p-6">
+          <div id="productDescription" class="prose max-w-none">
+            <!-- Description will be injected here -->
+          </div>
+        </div>
+
+        <!-- Features Section -->
+        <div class="border-t p-6">
+          <h3 class="font-bold text-xl mb-6">FITUR</h3>
+          <div id="productFeatures" class="space-y-6">
+            <!-- Features will be injected here -->
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+</div>
+
+<!-- WhatsApp Button -->
+<a
+  href="https://wa.me/6281234567890"
+  target="_blank"
+  class="fixed bottom-6 right-6 bg-orange-500 hover:bg-orange-600 text-white rounded-full p-4 shadow-lg z-50 transition-all"
+>
+  <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
+    <path
+      d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"
+    />
+  </svg>
+</a>

@@ -1,0 +1,238 @@
+<section class="py-16 px-4 max-w-7xl mx-auto">
+  <!-- Header -->
+  <div class="text-center mb-12">
+    <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-2">
+      KENALI EKOSISTEM RABIT! 🚀
+    </h2>
+  </div>
+
+  <!-- Carousel Wrapper -->
+  <div class="relative">
+    <!-- Navigation Buttons -->
+    <button
+      id="prevBtn"
+      class="nav-btn absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 z-10 bg-gray-700 text-white w-12 h-12 rounded-full shadow-lg flex items-center justify-center"
+    >
+      <svg
+        class="w-6 h-6"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M15 19l-7-7 7-7"
+        ></path>
+      </svg>
+    </button>
+
+    <button
+      id="nextBtn"
+      class="nav-btn absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 z-10 bg-gray-700 text-white w-12 h-12 rounded-full shadow-lg flex items-center justify-center"
+    >
+      <svg
+        class="w-6 h-6"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M9 5l7 7-7 7"
+        ></path>
+      </svg>
+    </button>
+
+    <!-- Carousel Container -->
+    <div id="carousel" class="carousel-container overflow-hidden">
+      <div
+        class="flex gap-6 transition-transform duration-500"
+        id="carouselTrack"
+      >
+        <!-- Card 1 -->
+        <div class="min-w-[calc(25%-18px)] shrink-0">
+          <div
+            class="relative rounded-2xl h-[500px] overflow-hidden shadow-lg group"
+          >
+            <img
+              src="/src/assets/Lampu2.png"
+              alt="Smart Bulb"
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+            />
+            <div
+              class="card-overlay absolute inset-0 flex flex-col justify-end p-8"
+            >
+              <h3 class="text-xl font-bold text-white mb-3">
+                Gimana kalau aku ganti suasana ruangan?
+              </h3>
+              <p class="text-2xl font-bold text-orange-400">#AdaRabit</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="min-w-[calc(25%-18px)] shrink-0">
+          <div
+            class="relative rounded-2xl h-[500px] overflow-hidden shadow-lg group"
+          >
+            <img
+              src="/src/assets/listrik.png"
+              alt="Smart Switch"
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+            />
+            <div
+              class="card-overlay absolute inset-0 flex flex-col justify-end p-8"
+            >
+              <h3 class="text-xl font-bold text-white mb-3">
+                Aku mau hemat tagihan listrik
+              </h3>
+              <p class="text-2xl font-bold text-orange-400">#SemakinPintar</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="min-w-[calc(25%-18px)] shrink-0">
+          <div
+            class="relative rounded-2xl h-[500px] overflow-hidden shadow-lg group"
+          >
+            <img
+              src="/src/assets/Kendali-Pintar.png"
+              alt="Smart Control"
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+            />
+            <div
+              class="card-overlay absolute inset-0 flex flex-col justify-end p-8"
+            >
+              <h3 class="text-xl font-bold text-white mb-3">
+                Aku ingin kendali jarak jauh
+              </h3>
+              <p class="text-2xl font-bold text-orange-400">#AdaRabit</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="min-w-[calc(25%-18px)] shrink-0">
+          <div
+            class="relative rounded-2xl h-[500px] overflow-hidden shadow-lg group"
+          >
+            <img
+              src="/src/assets/Jaringan-internet.png"
+              alt="WiFi Router"
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+            />
+            <div
+              class="card-overlay absolute inset-0 flex flex-col justify-end p-8"
+            >
+              <h3 class="text-xl font-bold text-white mb-3">
+                Aku butuh internetan stabil dan kencang
+              </h3>
+              <p class="text-2xl font-bold text-orange-400">#SemakinPintar</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="min-w-[calc(25%-18px)] shrink-0">
+          <div
+            class="relative rounded-2xl h-[500px] overflow-hidden shadow-lg group"
+          >
+            <img
+              src="/src/assets/dalam-ruangan-revisi2.png"
+              alt="Smart Lock"
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+            />
+            <div
+              class="card-overlay absolute inset-0 flex flex-col justify-end p-8"
+            >
+              <h3 class="text-xl font-bold text-white mb-3">
+                Apakah aku lupa kunci pintu?
+              </h3>
+              <p class="text-2xl font-bold text-orange-400">#SemakinPintar</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="min-w-[calc(25%-18px)] shrink-0">
+          <div
+            class="relative rounded-2xl h-[500px] overflow-hidden shadow-lg group"
+          >
+            <img
+              src="/src/assets/luar-ruangan-new.png"
+              alt="Smart Home"
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+            />
+            <div
+              class="card-overlay absolute inset-0 flex flex-col justify-end p-8"
+            >
+              <h3 class="text-xl font-bold text-white mb-3">
+                Solusi pintar untuk rumah modern
+              </h3>
+              <p class="text-2xl font-bold text-orange-400">#AdaRabit</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 7 -->
+        <div class="min-w-[calc(25%-18px)] shrink-0">
+          <div
+            class="relative rounded-2xl h-[500px] overflow-hidden shadow-lg group"
+          >
+            <img
+              src="/src/assets//Penyimpanan-data.png"
+              alt="Smart App"
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+            />
+            <div
+              class="card-overlay absolute inset-0 flex flex-col justify-end p-8"
+            >
+              <h3 class="text-xl font-bold text-white mb-3">
+                Kontrol semua perangkat dalam satu aplikasi
+              </h3>
+              <p class="text-2xl font-bold text-orange-400">#SemakinPintar</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 8 -->
+        <div class="min-w-[calc(25%-18px)] shrink-0">
+          <div
+            class="relative rounded-2xl h-[500px] overflow-hidden shadow-lg group"
+          >
+            <img
+              src="/src/assets/akses-pintu-new.png"
+              alt="Energy Saving"
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+            />
+            <div
+              class="card-overlay absolute inset-0 flex flex-col justify-end p-8"
+            >
+              <h3 class="text-xl font-bold text-white mb-3">
+                Hemat energi, hemat biaya
+              </h3>
+              <p class="text-2xl font-bold text-orange-400">#AdaRabit</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Indicators -->
+  <div class="flex justify-center gap-2 mt-8">
+    <div
+      id="indicator1"
+      class="w-3 h-3 rounded-full bg-orange-500 transition-all"
+    ></div>
+    <div
+      id="indicator2"
+      class="w-3 h-3 rounded-full bg-gray-300 transition-all"
+    ></div>
+  </div>
+</section>

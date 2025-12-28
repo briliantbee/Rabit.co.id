@@ -1,0 +1,77 @@
+<!-- Blog List Section -->
+<section id="blogListSection" class="py-12 px-4">
+  <div class="max-w-6xl mx-auto">
+    <h1 class="text-4xl font-bold text-gray-900 mb-8">Blog & Artikel</h1>
+    <div id="blogList"></div>
+
+    <!-- Pagination -->
+  </div>
+</section>
+
+<!-- Blog Detail Section (Hidden by default) -->
+<section id="blogDetailSection" class="py-12 px-4 hidden">
+  <div class="max-w-6xl mx-auto">
+    <!-- Back Button -->
+    <button
+      id="backButton"
+      class="mb-6 inline-flex items-center text-orange-600 hover:text-orange-700 font-semibold transition duration-300"
+    >
+      <svg
+        class="w-5 h-5 mr-2"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M15 19l-7-7 7-7"
+        ></path>
+      </svg>
+      Kembali ke Daftar Artikel
+    </button>
+
+    <div class="flex flex-col lg:flex-row gap-8">
+      <!-- Main Content -->
+      <div class="lg:w-2/3">
+        <div class="bg-white rounded-2xl shadow-lg p-8">
+          <div class="mb-4">
+            <span
+              id="detailCategory"
+              class="inline-block bg-orange-100 text-orange-600 text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wide"
+            ></span>
+          </div>
+          <h1
+            id="detailTitle"
+            class="text-3xl md:text-4xl font-bold text-gray-900 mb-4"
+          ></h1>
+          <div
+            id="detailMeta"
+            class="flex items-center text-sm text-gray-500 mb-8"
+          ></div>
+
+          <img
+            id="detailImage"
+            src=""
+            alt=""
+            class="w-full rounded-2xl mb-8 shadow-lg"
+          />
+
+          <div
+            id="detailContent"
+            class="prose prose-lg max-w-none text-gray-700 leading-relaxed space-y-6"
+          ></div>
+        </div>
+      </div>
+
+      <!-- Sidebar -->
+      <div class="lg:w-1/3">
+        <div class="bg-white rounded-2xl shadow-lg p-6 sticky top-4">
+          <h3 class="text-xl font-bold text-gray-900 mb-6">Artikel Terbaru</h3>
+          <div id="latestPosts" class="space-y-6"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
