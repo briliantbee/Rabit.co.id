@@ -1,36 +1,35 @@
 // Import styling Tailwind
 import "./style.css";
 
-(async () => {
-  async function loadHTML(path) {
-    const res = await fetch(path);
-    if (!res.ok) throw new Error(`Failed to load ${path}: ${res.status}`);
-    return res.text();
-  }
+// Import HTML components as raw strings
+import navbarHTML from "./components/navbar.html?raw";
+import productHTML from "./components/product.html?raw";
+import productDetailHTML from "./components/productDetail.html?raw";
+import footerHTML from "./components/footer.html?raw";
 
-  const app = document.getElementById("app");
+// Load components
+const app = document.getElementById("app");
 
-  // Deteksi halaman berdasarkan URL
-  const currentPath = window.location.pathname;
+// Deteksi halaman berdasarkan URL
+const currentPath = window.location.pathname;
 
-  if (currentPath.includes("productDetail")) {
-    // Load halaman detail produk
-    app.innerHTML =
-      (await loadHTML("/src/components/navbar.html")) +
-      (await loadHTML("/src/components/productDetail.html")) +
-      (await loadHTML("/src/components/footer.html"));
+if (currentPath.includes("productDetail")) {
+  // Load halaman detail produk
+  app.innerHTML = navbarHTML + productDetailHTML + footerHTML;
 
+  // Import and initialize JavaScript modules
+  (async () => {
     await import("./js/navbar.js");
     await import("./js/productDetail.js");
     await import("./js/product.js");
-  } else {
-    // Load halaman list produk (default)
-    app.innerHTML =
-      (await loadHTML("/src/components/navbar.html")) +
-      (await loadHTML("/src/components/product.html")) +
-      (await loadHTML("/src/components/footer.html"));
+  })();
+} else {
+  // Load halaman list produk (default)
+  app.innerHTML = navbarHTML + productHTML + footerHTML;
 
+  // Import and initialize JavaScript modules
+  (async () => {
     await import("./js/navbar.js");
     await import("./js/product.js");
-  }
-})();
+  })();
+}

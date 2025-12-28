@@ -1,20 +1,16 @@
 // Import styling Tailwind
 import "./style.css";
 
-// Import file JavaScript lainnya
+// Import HTML components as raw strings
+import navbarHTML from "./components/navbar.html?raw";
+import cctvHTML from "./components/cctv.html?raw";
+import footerHTML from "./components/footer.html?raw";
 
+// Load components
+const app = document.getElementById("app");
+app.innerHTML = navbarHTML + cctvHTML + footerHTML;
+
+// Import and initialize JavaScript modules
 (async () => {
-  async function loadHTML(path) {
-    const res = await fetch(path);
-    if (!res.ok) throw new Error(`Failed to load ${path}: ${res.status}`);
-    return res.text();
-  }
-
-  const app = document.getElementById("app");
-  app.innerHTML =
-    (await loadHTML("/src/components/navbar.html")) +
-    (await loadHTML("/src/components/cctv.html")) +
-    (await loadHTML("/src/components/footer.html"));
-
   await import("./js/navbar.js");
 })();

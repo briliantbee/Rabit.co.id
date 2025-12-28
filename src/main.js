@@ -1,25 +1,22 @@
 // Import styling Tailwind
 import "./style.css";
 
-// Import file JavaScript lainnya
+// Import HTML components as raw strings
+import navbarHTML from "./components/navbar.html?raw";
+import heroHTML from "./components/hero.html?raw";
+import bestHTML from "./components/best.html?raw";
+import categoriesHTML from "./components/categories.html?raw";
+import ekosistemHTML from "./components/ekosistem.html?raw";
+import logosHTML from "./components/logos.html?raw";
+import testimonialHTML from "./components/testimonial.html?raw";
+import footerHTML from "./components/footer.html?raw";
 
+// Load components
+const app = document.getElementById("app");
+app.innerHTML = navbarHTML + heroHTML + bestHTML + categoriesHTML + ekosistemHTML + logosHTML + testimonialHTML + footerHTML;
+
+// Import and initialize JavaScript modules
 (async () => {
-  async function loadHTML(path) {
-    const res = await fetch(path);
-    if (!res.ok) throw new Error(`Failed to load ${path}: ${res.status}`);
-    return res.text();
-  }
-
-  const app = document.getElementById("app");
-  app.innerHTML = (await loadHTML("/src/components/navbar.html")) +
-    (await loadHTML("/src/components/hero.html")) +
-    (await loadHTML("/src/components/best.html")) +
-    (await loadHTML("/src/components/categories.html")) +
-    (await loadHTML("/src/components/ekosistem.html")) +
-    (await loadHTML("/src/components/logos.html")) +
-    (await loadHTML("/src/components/testimonial.html")) +
-    (await loadHTML("/src/components/footer.html"));
-
   await import("./js/navbar.js");
   await import("./js/carousel.js");
   await import("./js/best.js");
