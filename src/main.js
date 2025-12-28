@@ -13,7 +13,15 @@ import footerHTML from "./components/footer.html?raw";
 
 // Load components
 const app = document.getElementById("app");
-app.innerHTML = navbarHTML + heroHTML + bestHTML + categoriesHTML + ekosistemHTML + logosHTML + testimonialHTML + footerHTML;
+app.innerHTML =
+  navbarHTML +
+  heroHTML +
+  bestHTML +
+  categoriesHTML +
+  ekosistemHTML +
+  logosHTML +
+  testimonialHTML +
+  footerHTML;
 
 // Import and initialize JavaScript modules
 (async () => {
