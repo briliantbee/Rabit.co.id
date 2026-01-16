@@ -1,449 +1,250 @@
-// Import products data (pastikan ini sama dengan product.js)
+// Import products data - Hanya produk yang sesuai dengan gambar promosi
 const products = [
   {
     id: 1,
-    name: "Smart IP Camera CCTV Indoor PTZ X - AI Auto Tracking",
+    name: "Smart IP Indoor Camera PTZ + AI Auto Tracking",
     category: "Keamanan Pintar",
     subcategory: "Smart CCTV Indoor",
-    image: "https://images.unsplash.com/photo-1558002038-1055907df827?w=400",
-    price: "Rp 899.000",
+    image: "/assets/Rabit_indoor_camera.jpeg",
+    price: "Rp 349.000",
     specs: [
-      "Resolusi: 1080P Full HD",
+      "Resolusi: 1080P Full HD (2MP)",
       "Pan & Tilt: 355° horizontal, 90° vertikal",
       "AI Auto Tracking",
       "Night Vision hingga 10m",
       "Audio 2-way",
-      "Support Cloud & SD Card",
+      "SD Card & Cloud Storage Support",
+      "Chipset Terbaik Jaminan",
+      "BLE Bluetooth + WiFi",
     ],
     package:
       "1 x Smart IP Camera Indoor PTZ X, 1 x Power Adapter, 1 x Mounting Kit, 1 x Quick Guide",
-    warranty: "Garansi Produk 18 Bulan",
+    warranty: "Garansi 18 Bulan - Garansi Seumur Hidup",
     description: {
-      title: "Smart IP Camera CCTV Indoor PTZ X - AI Auto Tracking",
+      title: "Smart IP Indoor Camera PTZ + AI Auto Tracking",
       subtitle:
-        "Officially Powered by Tuya, ekosistem Smart Home dan IoT global yang terdepan.",
+        "Keamanan Pintar. Otomatisasi. Powered by Tuya - Ekosistem Smart Home dan IoT global yang terdepan.",
+      intro:
+        "FITUR LENGKAP. HARGA BESTIE.\n\nKamera indoor pintar dengan AI Auto Tracking yang secara otomatis melacak pergerakan. Dilengkapi dengan SD Card & Cloud Storage untuk penyimpanan video maksimal.",
       features: [
         {
           title: "AI Auto Tracking",
-          desc: "Kamera secara otomatis melacak dan mengikuti pergerakan objek dengan teknologi AI.",
+          desc: "Kamera secara otomatis melacak dan mengikuti pergerakan objek dengan teknologi AI canggih.",
         },
         {
           title: "Pan & Tilt 355°",
-          desc: "Kontrol penuh dengan rotasi horizontal 355° dan vertikal 90°.",
+          desc: "Kontrol penuh dengan rotasi horizontal 355° dan vertikal 90° untuk cakupan maksimal.",
+        },
+        {
+          title: "1080P Full HD",
+          desc: "Resolusi 2MP memberikan gambar jernih dan detail untuk keamanan 24/7.",
         },
         {
           title: "Night Vision",
-          desc: "Penglihatan malam dengan jarak hingga 10 meter untuk keamanan 24/7.",
+          desc: "Penglihatan malam dengan jarak hingga 10 meter untuk keamanan sepanjang waktu.",
         },
         {
           title: "Audio 2-Way",
-          desc: "Berkomunikasi langsung melalui kamera dengan audio 2 arah.",
+          desc: "Berkomunikasi langsung melalui kamera dengan audio 2 arah yang jernih.",
+        },
+        {
+          title: "SD Card & Cloud Storage",
+          desc: "Dukungan penyimpanan ganda dengan SD Card hingga 128GB dan Cloud Storage.",
         },
       ],
     },
   },
   {
     id: 2,
-    name: "Smart IP Camera CCTV Indoor Mini - Wide Angle",
+    name: "Smart IP Outdoor Camera PTZ + Dual Lens",
     category: "Keamanan Pintar",
-    subcategory: "Smart CCTV Indoor",
-    image: "/camera.jpg",
-    price: "Rp 599.000",
+    subcategory: "Smart CCTV Outdoor",
+    image: "/assets/rabit_outdorr.jpeg",
+    price: "Rp 849.000",
     specs: [
-      "Resolusi: 720P HD",
-      "Wide Angle 120°",
-      "Night Vision",
+      "Resolusi: 1080P Full HD (2x 2MP)",
+      "Dual Lens untuk jangkauan maksimal",
+      "Pan & Tilt PTZ",
+      "Night Vision dengan Spotlight",
+      "Waterproof IP66",
       "Motion Detection",
-      "Support WiFi 2.4GHz",
-      "Compact Design",
+      "SD Card & Cloud Storage Support",
+      "Chipset Terbaik Jaminan",
     ],
     package:
-      "1 x Smart IP Camera Indoor Mini, 1 x Power Adapter, 1 x Quick Guide",
-    warranty: "Garansi Produk 12 Bulan",
+      "1 x Smart IP Outdoor Camera PTZ Dual Lens, 1 x Power Adapter, 1 x Mounting Kit, 1 x Quick Guide",
+    warranty: "Garansi 12 Bulan - Garansi Seumur Hidup",
     description: {
-      title: "Smart IP Camera CCTV Indoor Mini - Wide Angle",
-      subtitle: "Solusi keamanan kompak dengan sudut pandang lebar.",
+      title: "Smart IP Outdoor Camera PTZ + Dual Lens",
+      subtitle:
+        "DUA LENSA. JAGA MAKSIMAL. Keamanan Pintar. Otomatisasi. Powered by Tuya",
+      intro:
+        "FITUR LENGKAP. HARGA BESTIE.\n\nKamera outdoor dengan dual lens 2x 2MP untuk cakupan area yang lebih luas. Dilengkapi spotlight untuk night vision optimal dan tahan cuaca ekstrem.",
       features: [
         {
-          title: "Wide Angle 120°",
-          desc: "Cakupan area lebih luas dengan sudut pandang 120 derajat.",
+          title: "Dual Lens 2x 2MP",
+          desc: "Dua lensa dengan resolusi 2MP masing-masing memberikan cakupan area maksimal tanpa blind spot.",
         },
         {
-          title: "Compact Design",
-          desc: "Desain mini yang tidak mengganggu estetika ruangan.",
+          title: "PTZ Pan & Tilt",
+          desc: "Kontrol penuh rotasi kamera untuk memantau seluruh area outdoor.",
         },
         {
-          title: "Motion Detection",
-          desc: "Deteksi gerakan otomatis dengan notifikasi ke smartphone.",
+          title: "Night Vision + Spotlight",
+          desc: "Penglihatan malam dengan spotlight terintegrasi untuk gambar berwarna di malam hari.",
+        },
+        {
+          title: "Weatherproof IP66",
+          desc: "Tahan air dan debu, cocok untuk kondisi cuaca ekstrem outdoor Indonesia.",
+        },
+        {
+          title: "SD Card & Cloud Storage",
+          desc: "Penyimpanan ganda dengan SD Card hingga 128GB dan backup cloud otomatis.",
         },
       ],
     },
   },
   {
     id: 3,
-    name: "Smart IP Camera CCTV Outdoor Weatherproof",
+    name: "Smart Door Lock EZY + Ultra-Fast Fingerprint",
     category: "Keamanan Pintar",
-    subcategory: "Smart CCTV Outdoor",
-    image: "/camera.jpg",
-    price: "Rp 1.299.000",
+    subcategory: "Smart Door Lock",
+    image: "/assets/doorlock.jpeg",
+    price: "Rp 2.999.000",
     specs: [
-      "Resolusi: 2K Quad HD",
-      "IP66 Weatherproof",
-      "Night Vision 20m",
-      "Motion Detection with Alert",
-      "Two-way Audio",
-      "Cloud & SD Card Support",
+      "Ultra-Fast Fingerprint Sensor",
+      "Fingerprint Capacity: 100",
+      "Password: 4-12 digits",
+      "RFID Card Support",
+      "Auto-locks Electric",
+      "Lock and Unlock History",
+      "5 Ways to Unlock",
+      "Energy USB Type-C",
+      "Emergency Power: Micro USB",
+      "Battery: 4 x AA (6-12 bulan)",
+      "Material: Zinc Alloy",
     ],
     package:
-      "1 x Smart IP Camera Outdoor, 1 x Power Adapter, 1 x Mounting Kit, 1 x Weatherproof Cable, 1 x Quick Guide",
-    warranty: "Garansi Produk 24 Bulan",
+      "1 x Smart Door Lock EZY, 2 x RFID Card, 1 x Installation Kit, 4 x AA Battery, 1 x Quick Guide",
+    warranty: "Garansi 12 Bulan + Chipset Terbaik Jaminan",
     description: {
-      title: "Smart IP Camera CCTV Outdoor Weatherproof",
-      subtitle: "Kamera outdoor tahan cuaca untuk keamanan eksterior maksimal.",
+      title: "Smart Door Lock EZY + Ultra-Fast Fingerprint",
+      subtitle:
+        "CEPAT. AMAN. NYAMAN. Keamanan Pintar. Otomatisasi. Powered by Tuya",
+      intro:
+        "Kunci pintu pintar dengan sensor sidik jari ultra-cepat dan 5 metode akses untuk keamanan maksimal keluarga Anda.",
       features: [
         {
-          title: "IP66 Weatherproof",
-          desc: "Tahan hujan, debu, dan kondisi cuaca ekstrem.",
+          title: "Ultra-Fast Fingerprint Sensor",
+          desc: "Sensor sidik jari generasi terbaru yang sangat cepat dan akurat dalam 0.3 detik.",
         },
         {
-          title: "2K Quad HD",
-          desc: "Resolusi 2K untuk gambar super jernih dan detail.",
+          title: "Auto-locks Electric",
+          desc: "Kunci otomatis mengunci pintu secara elektrik setelah pintu ditutup untuk keamanan maksimal.",
         },
         {
-          title: "Night Vision 20m",
-          desc: "Jangkauan night vision hingga 20 meter untuk area luas.",
+          title: "5 Ways to Unlock",
+          desc: "Buka dengan sidik jari, password, RFID card, kunci mekanis, atau smartphone app.",
+        },
+        {
+          title: "Lock and Unlock History",
+          desc: "Pantau riwayat keluar masuk lengkap dengan waktu dan metode akses via aplikasi.",
+        },
+        {
+          title: "Protect+ Security",
+          desc: "Teknologi enkripsi tingkat bank dengan perlindungan anti-peeping password.",
+        },
+        {
+          title: "Energy USB Type-C",
+          desc: "Charging emergency via USB Type-C ketika baterai habis.",
         },
       ],
     },
   },
   {
     id: 4,
-    name: "NVR 8 Channel dengan HDD 1TB",
-    category: "Keamanan Pintar",
-    subcategory: "Penyimpanan Video",
-    image: "https://images.unsplash.com/photo-1597733336794-12d05021d510?w=400",
-    price: "Rp 2.499.000",
+    name: "Storage SD Card Rabit Legend Series 64GB",
+    category: "Penyimpanan Video",
+    subcategory: "SD Card Storage",
+    image: "/assets/sd_card64.jpeg",
+    price: "Rp 149.000",
     specs: [
-      "8 Channel Recording",
-      "HDD: 1TB Pre-installed",
-      "Support up to 4TB",
-      "H.265+ Compression",
-      "Remote Viewing via App",
-      "HDMI & VGA Output",
+      "Kapasitas: 64GB",
+      "Kecepatan: hingga 100 Mb/s",
+      "Class: V30 U3 A1",
+      "Type: XC (SDXC)",
+      "Optimasi untuk IP Camera",
+      "Garansi Seumur Hidup",
+      "Compatible dengan semua device",
     ],
-    package:
-      "1 x NVR 8CH, 1 x HDD 1TB, 1 x Power Adapter, 1 x HDMI Cable, 1 x Manual",
-    warranty: "Garansi Produk 24 Bulan, HDD 12 Bulan",
+    package: "1 x Rabit SD Card Legend Series 64GB",
+    warranty: "Garansi Seumur Hidup",
     description: {
-      title: "NVR 8 Channel dengan HDD 1TB",
-      subtitle: "Solusi penyimpanan video lengkap untuk sistem CCTV Anda.",
+      title: "SD Card Legend Series 64GB - Smart IP Camera Storage",
+      subtitle:
+        "Rabit LEGEND - Di optimasi untuk performa IP Camera. Kecepatan hingga 100 Mb/s",
+      intro:
+        "SD Card berkualitas premium yang dioptimalkan khusus untuk IP Camera dengan kecepatan tinggi dan garansi seumur hidup.",
       features: [
         {
-          title: "8 Channel Recording",
-          desc: "Rekam hingga 8 kamera secara bersamaan.",
+          title: "Optimasi IP Camera",
+          desc: "Dirancang khusus untuk recording IP Camera 24/7 dengan performa stabil.",
         },
         {
-          title: "H.265+ Compression",
-          desc: "Teknologi kompresi canggih untuk menghemat ruang penyimpanan.",
+          title: "Kecepatan Tinggi 100 Mb/s",
+          desc: "Transfer data cepat hingga 100 Mb/s untuk recording Full HD tanpa lag.",
         },
         {
-          title: "Remote Viewing",
-          desc: "Akses rekaman dari mana saja via smartphone.",
+          title: "V30 U3 A1 Class",
+          desc: "Class premium untuk performa maksimal dan durability tinggi.",
+        },
+        {
+          title: "Garansi Seumur Hidup",
+          desc: "Jaminan kualitas dengan garansi seumur hidup untuk ketenangan Anda.",
         },
       ],
     },
   },
   {
     id: 5,
-    name: "Smart Door Lock Fingerprint Pro",
-    category: "Keamanan Pintar",
-    subcategory: "Smart Door Lock",
-    image: "/Doorlock.jpg",
-    price: "Rp 3.299.000",
-    specs: [
-      "Fingerprint Capacity: 100",
-      "Password: 4-12 digits",
-      "RFID Card Support",
-      "Emergency Power: Micro USB",
-      "Battery: 4 x AA (6-12 bulan)",
-      "Material: Zinc Alloy",
-    ],
-    package:
-      "1 x Smart Door Lock, 2 x RFID Card, 1 x Installation Kit, 4 x AA Battery",
-    warranty: "Garansi Produk 24 Bulan",
-    description: {
-      title: "Smart Door Lock Fingerprint Pro",
-      subtitle:
-        "Kunci pintu pintar dengan 4 metode akses untuk keamanan maksimal.",
-      features: [
-        {
-          title: "Multi Access",
-          desc: "Buka dengan sidik jari, password, RFID card, atau kunci mekanis.",
-        },
-        {
-          title: "High Security",
-          desc: "Teknologi enkripsi tingkat bank untuk keamanan data.",
-        },
-        {
-          title: "Long Battery Life",
-          desc: "Baterai tahan 6-12 bulan dengan indikator baterai lemah.",
-        },
-      ],
-    },
-  },
-  {
-    id: 6,
-    name: "Smart Light Bulb Color 10W Bluetooth",
-    category: "Efisiensi Energi",
-    subcategory: "Smart Light",
-    image: "/lamp.jpg",
-    price: "Rp 149.000",
-    specs: [
-      "Lumens: 1000 lm",
-      "Color Temp: 2700K - 6500K",
-      "Color Range: 16 Million Color",
-      "Power: 10 Watt",
-      "BLE (Bluetooth Low Energy): 2.400-2.4835GHz",
-      "System Support: iOS & Android OS",
-      "Voltage: 220-240V 50Hz",
-      "Lifetime: Up to 20,000 Hours",
-    ],
-    package: "1 x Rabit Smart Bulb Color 10w Bluetooth",
-    warranty: "Garansi Produk 18 Bulan",
-    description: {
-      title: "Smart Light Bulb Color 10W Bluetooth",
-      subtitle:
-        "Officially Powered by Tuya, ekosistem Smart Home dan IoT global yang terdepan.",
-      features: [
-        {
-          title: "Fitur-Fitur:",
-          desc: "Cukup unduh aplikasi, hubungkan lampu dengan Bluetooth Smartphone, tanpa WiFi, lampu siap digunakan.",
-        },
-        {
-          title: "Stabil",
-          desc: "Tidak seperti lampu Smart WiFi Only umumnya, saat WiFi mengalami gangguan, lampu ini selalu bisa di kontrol stabil dengan Bluetooth.",
-        },
-        {
-          title: "Ekobright, Super Terang, Super Redup, Hemat Energi",
-          desc: "Pelopor teknologi Rendah Watt, Tinggi Lumen. Setara dengan terang Smart Bulb lain, 2 watt lebih tinggi. 8W=10W, 10W=12W, 13W=15W. Redupkan cahaya s/d 1% untuk penghematan energi.",
-        },
-      ],
-    },
-  },
-  {
-    id: 7,
-    name: "Smart Light Downlight Slim 18W Bluetooth",
-    category: "Efisiensi Energi",
-    subcategory: "Smart Light",
-    image: "https://images.unsplash.com/photo-1565814329452-e1efa11c5b89?w=400",
-    price: "Rp 299.000",
-    specs: [
-      "Lumens: 1800 lm",
-      "Color Temp: 2700K - 6500K",
-      "Power: 18 Watt",
-      "Diameter: 225mm",
-      "BLE: 2.400-2.4835GHz",
-      "System Support: iOS & Android OS",
-      "Voltage: 220-240V 50Hz",
-    ],
-    package: "1 x Rabit Smart Light Downlight Slim 18W, Installation Kit",
-    warranty: "Garansi Produk 18 Bulan",
-    description: {
-      title: "Smart Light Downlight Slim 18W Bluetooth",
-      subtitle: "Lampu downlight pintar dengan desain slim yang elegan.",
-      features: [
-        {
-          title: "Desain Slim",
-          desc: "Ketebalan ultra-tipis yang cocok untuk plafon modern.",
-        },
-        {
-          title: "High Brightness",
-          desc: "1800 lumens untuk penerangan maksimal.",
-        },
-        {
-          title: "Smart Control",
-          desc: "Kontrol via Bluetooth tanpa perlu WiFi.",
-        },
-      ],
-    },
-  },
-  {
-    id: 8,
-    name: "Smart Plug 16A with Energy Monitor",
-    category: "Efisiensi Energi",
-    subcategory: "Sakelar & Colokan",
-    image: "/sakelar.jpg",
-    price: "Rp 199.000",
-    specs: [
-      "Max Load: 16A / 3680W",
-      "Energy Monitoring",
-      "WiFi 2.4GHz",
-      "Timer & Schedule",
-      "Voice Control Support",
-      "Overload Protection",
-    ],
-    package: "1 x Smart Plug 16A, 1 x Quick Guide",
-    warranty: "Garansi Produk 12 Bulan",
-    description: {
-      title: "Smart Plug 16A with Energy Monitor",
-      subtitle: "Colokan pintar dengan monitoring konsumsi listrik real-time.",
-      features: [
-        {
-          title: "Energy Monitoring",
-          desc: "Pantau penggunaan listrik secara real-time dan riwayat konsumsi.",
-        },
-        {
-          title: "High Power 16A",
-          desc: "Mendukung perangkat hingga 3680W dengan aman.",
-        },
-        {
-          title: "Smart Schedule",
-          desc: "Atur jadwal on/off otomatis untuk hemat energi.",
-        },
-      ],
-    },
-  },
-  {
-    id: 9,
-    name: "Smart Switch 3 Gang WiFi",
-    category: "Efisiensi Energi",
-    subcategory: "Sakelar & Colokan",
-    image: "/sakelar.jpg",
-    price: "Rp 349.000",
-    specs: [
-      "3 Gang Control",
-      "WiFi 2.4GHz",
-      "Touch Panel Glass",
-      "Timer & Schedule",
-      "Voice Control Support",
-      "No Neutral Wire Required",
-    ],
-    package: "1 x Smart Switch 3 Gang, 1 x Installation Guide",
-    warranty: "Garansi Produk 18 Bulan",
-    description: {
-      title: "Smart Switch 3 Gang WiFi",
-      subtitle: "Saklar pintar 3 tombol dengan panel kaca premium.",
-      features: [
-        {
-          title: "Touch Panel",
-          desc: "Panel kaca premium dengan sentuhan responsif.",
-        },
-        {
-          title: "3 Gang Control",
-          desc: "Kontrol 3 lampu berbeda dalam satu panel.",
-        },
-        {
-          title: "Easy Installation",
-          desc: "Tidak memerlukan kabel neutral untuk instalasi mudah.",
-        },
-      ],
-    },
-  },
-  {
-    id: 10,
-    name: "Smart IR Remote Universal",
-    category: "Efisiensi Energi",
-    subcategory: "Kendali",
-    image: "/remote.jpg",
+    name: "Storage SD Card Rabit Legend Series 128GB",
+    category: "Penyimpanan Video",
+    subcategory: "SD Card Storage",
+    image: "/assets/sd_card128.jpeg",
     price: "Rp 249.000",
     specs: [
-      "Control up to 50 devices",
-      "WiFi 2.4GHz",
-      "IR Database 10,000+ brands",
-      "Voice Control Support",
-      "Timer & Scene",
-      "Compact Design",
+      "Kapasitas: 128GB",
+      "Kecepatan: hingga 100 Mb/s",
+      "Class: V30 U3 A1",
+      "Type: XC (SDXC)",
+      "Optimasi untuk IP Camera",
+      "Garansi Seumur Hidup",
+      "Compatible dengan semua device",
     ],
-    package: "1 x Smart IR Remote, 1 x USB Cable, 1 x Quick Guide",
-    warranty: "Garansi Produk 12 Bulan",
+    package: "1 x Rabit SD Card Legend Series 128GB",
+    warranty: "Garansi Seumur Hidup",
     description: {
-      title: "Smart IR Remote Universal",
-      subtitle: "Remote universal pintar untuk semua perangkat IR Anda.",
+      title: "SD Card Legend Series 128GB - Smart IP Camera Storage",
+      subtitle:
+        "Rabit LEGEND - Di optimasi untuk performa IP Camera. Kecepatan hingga 100 Mb/s",
+      intro:
+        "SD Card kapasitas besar 128GB untuk recording lebih lama dengan kualitas premium dan garansi seumur hidup.",
       features: [
         {
-          title: "Universal Control",
-          desc: "Kontrol TV, AC, kipas, dan perangkat IR lainnya dari satu remote.",
+          title: "Kapasitas Besar 128GB",
+          desc: "Penyimpanan lebih besar untuk recording lebih lama hingga berminggu-minggu.",
         },
         {
-          title: "Large Database",
-          desc: "Database lebih dari 10,000 merek untuk kompatibilitas maksimal.",
+          title: "Optimasi IP Camera",
+          desc: "Dirancang khusus untuk recording IP Camera 24/7 dengan performa stabil.",
         },
         {
-          title: "Smart Scene",
-          desc: "Buat scene untuk mengontrol banyak perangkat sekaligus.",
-        },
-      ],
-    },
-  },
-  {
-    id: 11,
-    name: "Smart WiFi Router AC1200 Dual Band",
-    category: "Jaringan Internet",
-    subcategory: "Router",
-    image: "https://images.unsplash.com/photo-1606904825846-647eb07f5be2?w=400",
-    price: "Rp 799.000",
-    specs: [
-      "Speed: 1200Mbps (867+300)",
-      "Band: Dual Band 2.4GHz & 5GHz",
-      "Antenna: 4 x 5dBi",
-      "Port: 4 LAN + 1 WAN",
-      "Coverage: Up to 150m²",
-      "Guest Network Support",
-    ],
-    package:
-      "1 x Smart Router AC1200, 1 x Power Adapter, 1 x Ethernet Cable, 1 x Quick Guide",
-    warranty: "Garansi Produk 12 Bulan",
-    description: {
-      title: "Smart WiFi Router AC1200 Dual Band",
-      subtitle: "Router pintar untuk koneksi internet stabil dan cepat.",
-      features: [
-        {
-          title: "Dual Band",
-          desc: "2.4GHz untuk jangkauan dan 5GHz untuk kecepatan maksimal.",
+          title: "Kecepatan Tinggi 100 Mb/s",
+          desc: "Transfer data cepat hingga 100 Mb/s untuk recording Full HD tanpa lag.",
         },
         {
-          title: "Smart Management",
-          desc: "Kelola jaringan via app dengan parental control dan guest network.",
-        },
-        {
-          title: "Wide Coverage",
-          desc: "Cakupan hingga 150m² dengan 4 antena powerful.",
-        },
-      ],
-    },
-  },
-  {
-    id: 12,
-    name: "WiFi Range Extender AC750",
-    category: "Jaringan Internet",
-    subcategory: "Range Extender",
-    image: "https://images.unsplash.com/photo-1614624532983-4ce03382d63d?w=400",
-    price: "Rp 349.000",
-    specs: [
-      "Speed: 750Mbps",
-      "Dual Band 2.4GHz & 5GHz",
-      "Antenna: 2 x 3dBi",
-      "Coverage Extension: Up to 100m²",
-      "Easy Setup via WPS",
-      "Ethernet Port",
-    ],
-    package: "1 x WiFi Range Extender, 1 x Quick Guide",
-    warranty: "Garansi Produk 12 Bulan",
-    description: {
-      title: "WiFi Range Extender AC750",
-      subtitle: "Perluas jangkauan WiFi Anda hingga seluruh rumah.",
-      features: [
-        {
-          title: "Easy Setup",
-          desc: "Setup mudah dengan tombol WPS dalam hitungan detik.",
-        },
-        {
-          title: "Dual Band",
-          desc: "Mendukung dual band untuk performa optimal.",
-        },
-        {
-          title: "Extended Coverage",
-          desc: "Perpanjang jangkauan WiFi hingga 100m² tambahan.",
+          title: "Garansi Seumur Hidup",
+          desc: "Jaminan kualitas dengan garansi seumur hidup untuk ketenangan Anda.",
         },
       ],
     },
@@ -497,65 +298,49 @@ function renderProductDetail(product) {
     mainImage.alt = product.name;
   }
 
-  // Thumbnails (if product has multiple images)
-  const thumbnails = document.getElementById("thumbnails");
-  if (thumbnails && product.images) {
-    thumbnails.innerHTML = product.images
-      .map(
-        (img, index) => `
-      <img 
-        src="${img}" 
-        alt="${product.name} ${index + 1}"
-        class="w-full h-20 object-cover rounded cursor-pointer hover:opacity-75 transition"
-        onclick="changeMainImage('${img}')"
-      />
-    `
-      )
-      .join("");
-  }
-
   // Product name
   const productName = document.getElementById("productName");
   if (productName) {
     productName.textContent = product.name;
   }
 
+  // Price
+  const productPrice = document.getElementById("productPrice");
+  if (productPrice) {
+    productPrice.textContent = product.price;
+  }
+
   // Specifications
   const productSpecs = document.getElementById("productSpecs");
   if (productSpecs) {
     productSpecs.innerHTML = product.specs
-      .map((spec) => `<div class="text-gray-700">${spec}</div>`)
+      .map((spec) => `<div class="text-gray-700 mb-1">• ${spec}</div>`)
       .join("");
   }
 
   // Package contents
   const productPackage = document.getElementById("productPackage");
   if (productPackage) {
-    // Split by newline and create list
-    const packageItems = product.package.split("\n");
-    productPackage.innerHTML = packageItems
-      .map((item) => `<div class="mb-1">${item}</div>`)
-      .join("");
+    productPackage.innerHTML = `<div class="text-gray-700">${product.package}</div>`;
+  }
+
+  // Warranty
+  const productWarranty = document.getElementById("productWarranty");
+  if (productWarranty) {
+    productWarranty.innerHTML = `<div class="text-gray-700">${product.warranty}</div>`;
   }
 
   // Description
   const productDescription = document.getElementById("productDescription");
   if (productDescription && product.description) {
     let descHtml = `<h2 class="text-2xl font-bold mb-4">${product.description.title}</h2>`;
+    descHtml += `<p class="text-gray-600 mb-4">${product.description.subtitle}</p>`;
 
     if (product.description.intro) {
       const introLines = product.description.intro.split("\n");
       descHtml += introLines
-        .map((line) => `<p class="mb-3">${line}</p>`)
+        .map((line) => `<p class="mb-3 text-gray-700">${line}</p>`)
         .join("");
-    }
-
-    if (product.description.appInfo) {
-      descHtml += `<p class="mb-3 font-semibold">${product.description.appInfo}</p>`;
-    }
-
-    if (product.description.sdCard) {
-      descHtml += `<p class="mb-3">${product.description.sdCard}</p>`;
     }
 
     productDescription.innerHTML = descHtml;
@@ -565,17 +350,14 @@ function renderProductDetail(product) {
   const productFeatures = document.getElementById("productFeatures");
   if (productFeatures && product.description && product.description.features) {
     productFeatures.innerHTML = product.description.features
-      .map((feature) => {
-        if (feature.title === "FITUR" && !feature.desc) {
-          return ""; // Skip empty FITUR header
-        }
-        return `
+      .map(
+        (feature) => `
         <div class="mb-6">
           <h4 class="font-bold text-lg mb-2">${feature.title}</h4>
-          ${feature.desc ? `<p class="text-gray-700">${feature.desc}</p>` : ""}
+          <p class="text-gray-700">${feature.desc}</p>
         </div>
-      `;
-      })
+      `
+      )
       .join("");
   }
 
@@ -606,6 +388,7 @@ function saveToRecentlyViewed(product) {
       name: product.name,
       image: product.image,
       subcategory: product.subcategory,
+      price: product.price,
     });
 
     // Keep only last 3 items
@@ -642,6 +425,7 @@ function renderRecentlyViewed(items) {
       <div class="flex-1 min-w-0">
         <p class="text-xs text-gray-500">${item.subcategory}</p>
         <p class="text-sm font-medium text-gray-900 truncate">${item.name}</p>
+        <p class="text-xs text-orange-600 font-semibold">${item.price}</p>
       </div>
     </a>
   `
